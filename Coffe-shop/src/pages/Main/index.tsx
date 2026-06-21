@@ -1,5 +1,6 @@
 // 🛠️ YALNIZ HERO KOMPONENTİNİ ÇAĞIRIRIQ
 import { Hero } from './components/Hero'; 
+import { OurStory } from './components/ourStory';
 
 export const Main = () => {
   return (
@@ -7,7 +8,7 @@ export const Main = () => {
       
       {/* Səhifədə hələlik yalnız Hero section aktivdir */}
       <Hero />
-
+    <OurStory/>
     </div>
   );
 };

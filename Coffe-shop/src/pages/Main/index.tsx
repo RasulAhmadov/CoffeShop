@@ -1,7 +1,10 @@
 // 🛠️ YALNIZ HERO KOMPONENTİNİ ÇAĞIRIRIQ
+import { ExperienceGallery } from './components/experienceGallery';
 import { Hero } from './components/Hero'; 
+
 import { MenuItems } from './components/menuItems';
 import { OurStory } from './components/ourStory';
+import { LocationHours } from './components/locationHours';
 
 export const Main = () => {
   return (
@@ -11,6 +14,8 @@ export const Main = () => {
       <Hero />
     <OurStory/>
     <MenuItems/>
+    <ExperienceGallery />
+        <LocationHours />
     </div>
   );
 };

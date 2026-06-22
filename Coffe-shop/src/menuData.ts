@@ -1,13 +1,13 @@
-// src/menuData.ts
 
-// 📸 Kartların şəkillərini və ikonunu xarici fayla import edirik
-import menuImg1 from './assets/img/coffe.jpg'; // Öz qovluq yoluna görə düzəldə bilərsən
-import menuImg2 from './assets/img/coffe.jpg'; 
-import menuImg3 from './assets/img/coffe.jpg'; 
-import menuImg4 from './assets/img/coffe.jpg'; 
-import menuImg5 from './assets/img/coffe.jpg'; 
-import menuImg6 from './assets/img/coffe.jpg'; 
-import plusIcon from './assets/img/cofe_icon.png'; // "+ Add to order" yanındakı ikon
+
+
+import menuImg1 from './assets/img/cappucino.png'; 
+import menuImg2 from './assets/img/coldbrew.png'; 
+import menuImg3 from './assets/img/caramellatte.png'; 
+import menuImg4 from './assets/img/butter.png'; 
+import menuImg5 from './assets/img/avocado.png'; 
+import menuImg6 from './assets/img/tiramisu.png'; 
+import plusIcon from './assets/img/cofe_icon.png'; 
 
 export interface MenuCardType {
   id: number;

@@ -5,6 +5,7 @@ import { Hero } from './components/Hero';
 import { MenuItems } from './components/menuItems';
 import { OurStory } from './components/ourStory';
 import { LocationHours } from './components/locationHours';
+import { BookTable } from './components/bookTable';
 
 export const Main = () => {
   return (
@@ -16,6 +17,7 @@ export const Main = () => {
     <MenuItems/>
     <ExperienceGallery />
         <LocationHours />
+        <BookTable />
     </div>
   );
 };

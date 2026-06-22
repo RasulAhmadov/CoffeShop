@@ -124,10 +124,13 @@ export const BookTable = () => {
                 left: '418px',   
                 borderRadius: '8px',
                 backgroundColor: '#D4A574E5',
-                color: '#FFFFFF',
+                color: '#8B4513',
                 fontWeight: 600,
                 fontFamily: "'Poppins', sans-serif",
-                border: 'none'
+                border: 'none',
+                
+
+
                 
               }}
             >
@@ -146,7 +149,7 @@ export const BookTable = () => {
                 fontSize: '20px',
                 lineHeight: '100%',
                 textAlign: 'center',
-                color: '#8B4513CC'
+                color: '#6f4e37'
               }}
             >
               We'll confirm your reservation within 1 hour via email or phone

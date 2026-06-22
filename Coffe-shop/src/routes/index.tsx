@@ -1,9 +1,18 @@
 import React from 'react';
-import { Main } from "../pages/Main/"; // Fiqurlu mötərizə olmadan, böyük hərflə import edirik
+import { Main } from "../pages/Main";
+import { MainLayout } from '../layout/MainLayout';
+ 
 
 export const routes = [
   {
     path: "/",
-    element: <Main />, // Burada mütləq böyük hərflə <Main /> yazılmalıdır!
+    element: <MainLayout />, 
+    children: [
+      {
+        path: "/", 
+        element: <Main />,
+      },
+      
+    ]
   }
 ];

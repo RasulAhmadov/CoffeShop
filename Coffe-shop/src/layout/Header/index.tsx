@@ -1,28 +1,92 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from "../../assets/img/logo.png";
 
-const Header: React.FC = () => {
+export const Header = () => {
   return (
-    <header className="absolute top-0 left-0 w-full z-50 bg-transparent">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <header 
+      className="w-full sticky top-0 z-50 flex items-center justify-between opacity-100"
+      style={{
         
+        height: '72px',
+        margin: '0 auto', 
+        borderBottom: '1px solid #6F4E37',
+        paddingTop: '16px',
+         paddingRight: '96px',
+          paddingBottom: '16px',
+        paddingLeft: '96px',
+       backgroundColor: 'rgba(247, 247, 227, 0.75)',
+        backdropFilter: 'blur(20px)',
+    WebkitBackdropFilter: 'blur(20px)',
         
-        <div className="text-white font-serif text-2xl font-bold tracking-wide cursor-pointer">
-          Brewtopia
-        </div>
-
-        
-        <nav className="hidden md:flex items-center gap-8 text-white/90 font-medium text-sm">
-          <a href="#home" className="hover:text-white transition-colors">Home</a>
-          <a href="#about" className="hover:text-white transition-colors">About</a>
-          <a href="#menu" className="hover:text-white transition-colors">Menu</a>
-          <a href="#contact" className="hover:text-white transition-colors">Contact</a>
-        </nav>
-
-       
-        
+      }}
+    >
+      
+      <div className="flex items-center cursor-pointer">
+        <img 
+          src={logo} 
+          
+          className="object-contain"
+          style={{ height: '73px' }} 
+        />
       </div>
+
+      
+      <nav 
+        className="flex items-center"
+        style={{ gap: '32px' }} 
+      >
+        <Link 
+          to="/" 
+          className="hover:text-[#D4A574] "
+          style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 600, fontSize: '16px', color: '#6F4E37' }}
+        >
+          Home
+        </Link>
+        <Link 
+          to="/menu" 
+          className="hover:text-[#D4A574] "
+          style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 600,color: '#6F4E37', fontSize: '16px',  }}
+        >
+          Menu
+        </Link>
+        <Link 
+          to="/about" 
+          className="hover:text-[#D4A574] "
+          style={{ fontFamily: "'Poppins', sans-serif",  color: '#6F4E37',fontWeight: 600, fontSize: '16px', }}
+        >
+          About
+        </Link>
+        <Link 
+          to="/contact" 
+          className="hover:text-[#D4A574]"
+          style={{ fontFamily: "'Poppins', sans-serif",fontSize: '16px', fontWeight: 600,  color: '#6F4E37' }}
+        >
+          Contact
+        </Link>
+      </nav>
+
+      
+      <button
+        type="button"
+        className="flex items-center justify-center cursor-pointer  text-white  border-none"
+        style={{
+          width: '165px',
+          height: '51px',
+             gap: '10px',
+                 borderRadius: '8px',
+              paddingTop: '12px',
+              paddingRight: '24px',
+          paddingBottom: '12px',
+            paddingLeft: '24px',
+            backgroundColor: '#D4A574',
+           fontFamily: "'Poppins', sans-serif",
+              fontWeight: 600,
+          fontSize: '15px'
+        }}
+      >
+        Book a Table
+      </button>
     </header>
   );
 };
-
-export default Header;

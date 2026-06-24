@@ -13,104 +13,64 @@ import mapIcon from '../../assets/img/map-icon.png';
 export const Footer = () => {
   return (
     <footer 
-      className="w-full relative block"
-      style={{
-        backgroundColor: '#6F4E37', 
-        height: '440px', 
-        paddingTop: '80px',
-        paddingBottom: '40px',
-      }}
+      className="w-full relative block h-auto pt-16 pb-8 md:pt-20 md:pb-10"
+      style={{ backgroundColor: '#6F4E37' }}
     >
-     
-      <div className="relative mx-auto h-full flex flex-col justify-between" style={{ width: '1440px', paddingLeft: '96px', paddingRight: '96px' }}>
+      
+      <div className="relative mx-auto w-full max-w-[1440px] px-6 md:px-24 flex flex-col justify-between gap-12">
         
-        
-        <div className="w-full flex justify-between items-start">
+       
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 items-start">
           
-          
-          <div className="flex flex-col flex-1" style={{ gap: '24px', maxWidth: '300px' }}>
-            <img src={logoLight}  className="object-contain self-start" 
-            style={{ height: '45px' }} />
-
-
-
-
-            <p style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400, 
-            fontSize: '16px', 
-              color: '#FFFBEB', }}>
+         
+          <div className="flex flex-col gap-6 max-w-[300px]">
+            <img src={logoLight} className="object-contain self-start h-[45px]" alt="Logo" />
+            <p style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400, fontSize: '16px', color: '#FFFBEB' }}>
               Where Every Cup Tells a Story
-
             </p>
             <div className="flex items-center gap-4 cursor-pointer">
-              <img src={tiktokIcon}  className=" object-contain invert brightness-200 color w-5 h-5 " style={{ filter: 'brightness(0) invert(1)' }} />
-              <img src={instaIcon}  className=" h-5  invert brightness-200 w-5 object-contain" style={{ filter: 'brightness(0) invert(1)' }} />
-              <img src={fbIcon}  className=" invert brightness-200h-5 object-contain  " style={{ filter: 'brightness(0) invert(1)' }} />
+              <img src={tiktokIcon} className="object-contain w-5 h-5" style={{ filter: 'brightness(0) invert(1)' }} alt="TikTok" />
+              <img src={instaIcon} className="w-5 h-5 object-contain" style={{ filter: 'brightness(0) invert(1)' }} alt="Instagram" />
+              <img src={fbIcon} className="w-5 h-5 object-contain" style={{ filter: 'brightness(0) invert(1)' }} alt="Facebook" />
             </div>
           </div>
 
          
-          <div className="flex flex-col" style={{ gap: '20px' }}>
-            <h4 style={{ fontFamily: "'Playfair Disw-5 play', serif",
-               fontWeight: 700, 
-               fontSize: '22px', 
-               color: '#FFFBEB' }}>
-                                 Quick Links
+          <div className="flex flex-col gap-5">
+            <h4 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '22px', color: '#FFFBEB' }}>
+              Quick Links
             </h4>
-
-
-
-
-
-            <nav className="flex flex-col" style={{ gap: '12px' }}>
-              <Link to="/" className=" transition-colors hover:text-[#D4A574]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '15px', color: '#FFFBEBCC' }}>Home</Link>
-              <Link to="/menu" className=" transition-colors hover:text-[#D4A574]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '15px', color: '#FFFBEBCC' }}>Menu</Link>
+            <nav className="flex flex-col gap-3">
+              <Link to="/" className="transition-colors hover:text-[#D4A574]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '15px', color: '#FFFBEBCC' }}>Home</Link>
+              <Link to="/menu" className="transition-colors hover:text-[#D4A574]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '15px', color: '#FFFBEBCC' }}>Menu</Link>
               <Link to="/about" className="hover:text-[#D4A574] transition-colors" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '15px', color: '#FFFBEBCC' }}>About Us</Link>
-              <Link to="/contact" className="transition-colors hover:text-[#D4A574] " style={{ fontFamily: "'Poppins', sans-serif", fontSize: '15px', color: '#FFFBEBCC' }}>Contact</Link>
+              <Link to="/contact" className="transition-colors hover:text-[#D4A574]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '15px', color: '#FFFBEBCC' }}>Contact</Link>
             </nav>
           </div>
 
           
-          <div className="flex flex-col" style={{ gap: '20px' }}>
-            <h4 style={{ fontFamily: "'Playfair Display', serif",
-               fontWeight: 700,
-                fontSize: '22px',
-                 color: '#FFFBEB' }}>
-                    Contact
-
-
-
+          <div className="flex flex-col gap-5">
+            <h4 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '22px', color: '#FFFBEB' }}>
+              Contact
             </h4>
-            <div className="flex flex-col" style={{ gap: '16px' }}>
-
-
+            <div className="flex flex-col gap-4">
               <div className="flex items-center gap-3" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '15px', color: '#FFFBEBCC' }}>
-                <img src={mailIcon} className= "w-4 h-4 object-contain opacity-80" />
+                <img src={mailIcon} className="w-4 h-4 object-contain opacity-80" alt="Mail" />
                 <span>Hello@brewtopia.cafe</span>
               </div>
-                           <div className="flex items-center gap-3"
-              
-                    style={{ fontFamily: "'Poppins', sans-serif",
-              
-                   fontSize: '15px', color: '#FFFBEBCC'  }}>
-                 <img src={phoneIcon}   className="w-4 h-4 object-contain opacity-80 " />
-               <span>  +1 (555) 123-67 </span>
-                    </div>
-
-
-
-
-              <div className="flex items-center gap-3"
-               style={{ fontFamily: "'Poppins', sans-serif", 
-               fontSize: '15px', 
-               color: '#FFFBEBCC' }}>
-                <img src={mapIcon}  className="w-4 h-4 object-contain opacity-80" />
+              <div className="flex items-center gap-3" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '15px', color: '#FFFBEBCC' }}>
+                <img src={phoneIcon} className="w-4 h-4 object-contain opacity-80" alt="Phone" />
+                <span>+1 (555) 123-67</span>
+              </div>
+              <div className="flex items-center gap-3" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '15px', color: '#FFFBEBCC' }}>
+                <img src={mapIcon} className="w-4 h-4 object-contain opacity-80" alt="Map" />
                 <span>123 Coffee Street, Downtown</span>
               </div>
             </div>
           </div>
 
-         
-          <div className="flex flex-col" style={{ gap: '20px', width: '280px' }}>
+          
+          <div className="flex flex-col gap-5 w-full max-w-[280px]">
             <h4 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '22px', color: '#FFFBEB' }}>
               Stay Updated
             </h4>
@@ -139,17 +99,10 @@ export const Footer = () => {
 
         </div>
 
-       
-        <div className="w-full">
-         
+        
+        <div className="w-full mt-4">
           <div style={{ width: '100%', height: '1px', backgroundColor: '#FFFBEB', opacity: 0.9, marginBottom: '24px' }}></div>
-          
-             <p className="text-center" 
-             
-             style={{ fontFamily: "'Poppins', sans-serif",
-               fontSize: '14px',
-                color: '#FFFBEB', 
-                     }}>
+          <p className="text-center" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '14px', color: '#FFFBEB' }}>
             © 2025 Brewtopia. All rights reserved.
           </p>
         </div>

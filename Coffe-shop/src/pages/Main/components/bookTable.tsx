@@ -3,32 +3,23 @@ import React from 'react';
 export const BookTable = () => {
   return (
     <section 
-      className="w-full relative block" 
+      className="w-full relative block h-auto lg:h-[1284px] py-12 lg:py-0" 
       style={{ 
-        height: '1284px',
         backgroundColor: '#F7F7E3', 
       }}
     >
       
-      <div className="relative mx-auto h-full" style={{ width: '1440px' }}>
+      <div className="relative mx-auto h-full w-full max-w-[1440px] px-4 md:px-6">
         
-    
-      <div 
-          className="text-center" 
-          style={{ 
-            position: 'absolute',
-            width: '647px',
-            height: '112px', 
-            top: '45px',
-            left: '396px'
-          }} 
+       
+        <div 
+          className="text-center w-full lg:w-[647px] h-auto lg:h-[112px] lg:absolute lg:top-[45px] lg:left-[396px] mb-8 lg:mb-0" 
         >
           <h1 
             style={{ 
               fontFamily: "'Playfair Display', serif", 
               fontWeight: 700, 
               fontSize: '40px', 
-              
               color: '#6F4E37',
               marginBottom: '12px'
             }}
@@ -47,104 +38,96 @@ export const BookTable = () => {
           </p>
         </div>
 
-        
+       
         <div 
-          className="opacity-100 shadow-sm"
+          className="opacity-100 shadow-sm mx-auto w-full max-w-[1049px] h-auto lg:h-[935px] lg:absolute lg:top-[247px] lg:left-[196px] p-6 md:p-10 lg:p-0"
           style={{
-            position: 'absolute',
-            width: '1049px',
-            height: '935px',
-            top: '247px',  
-            left: '196px', 
             backgroundColor: '#FFFBEB',
             borderRadius: '12px',
           }}
         >
-          <div className="w-full h-full relative">
+          <div className="w-full h-full relative flex flex-col gap-6 lg:block">
 
-         
-            <div style={{ position: 'absolute', top: '50px', left: '60px', width: '450px' }}>
+          
+            <div className="w-full lg:w-[450px] lg:absolute lg:top-[50px] lg:left-[60px]">
               <label className="block text-stone-700 text-sm font-semibold mb-2">Name <span className="text-red-500">*</span></label>
               <input type="text" className="w-full px-4 py-3 rounded-md border border-stone-200 bg-white focus:outline-none" style={{ height: '48px' }} />
             </div>
 
-        
-            <div style={{ position: 'absolute', top: '150px', left: '60px', width: '450px' }}>
+            <div className="w-full lg:w-[450px] lg:absolute lg:top-[150px] lg:left-[60px]">
               <label className="block text-stone-700 text-sm font-semibold mb-2">Phone Number <span className="text-red-500">*</span></label>
               <input type="tel" className="w-full px-4 py-3 rounded-md border border-stone-200 bg-white focus:outline-none" style={{ height: '48px' }} />
             </div>
 
-          
-            <div style={{ position: 'absolute', top: '150px', left: '540px', width: '450px' }}>
+           
+            <div className="w-full lg:w-[450px] lg:absolute lg:top-[150px] lg:left-[540px]">
               <label className="block text-stone-700 text-sm font-semibold mb-2">E-Mail Address</label>
               <input type="email" className="w-full px-4 py-3 rounded-md border border-stone-200 bg-white focus:outline-none" style={{ height: '48px' }} />
             </div>
 
             
-            <div style={{ position: 'absolute', top: '250px', left: '60px', width: '280px' }}>
-              <label className="block text-stone-700 text-sm font-semibold mb-2">Date <span className="text-red-500">*</span></label>
-              <input type="date" className="w-full px-4 py-3 rounded-md border border-stone-200 bg-white focus:outline-none" style={{ height: '48px' }} />
+            <div className="w-full flex flex-col md:flex-row gap-6 lg:block">
+          
+              <div className="w-full md:w-1/3 lg:w-[280px] lg:absolute lg:top-[250px] lg:left-[60px]">
+                <label className="block text-stone-700 text-sm font-semibold mb-2">Date <span className="text-red-500">*</span></label>
+                <input type="date" className="w-full px-4 py-3 rounded-md border border-stone-200 bg-white focus:outline-none" style={{ height: '48px' }} />
+              </div>
+
+              
+              <div className="w-full md:w-1/3 lg:w-[280px] lg:absolute lg:top-[250px] lg:left-[380px]">
+                <label className="block text-stone-700 text-sm font-semibold mb-2">Time <span className="text-red-500">*</span></label>
+                <input type="time" className="w-full px-4 py-3 rounded-md border border-stone-200 bg-white focus:outline-none" style={{ height: '48px' }} />
+              </div>
+
+              
+              <div className="w-full md:w-1/3 lg:w-[290px] lg:absolute lg:top-[250px] lg:left-[700px]">
+                <label className="block text-stone-700 text-sm font-semibold mb-2">Guests <span className="text-red-500">*</span></label>
+                <input type="number" min="1" className="w-full px-4 py-3 rounded-md border border-stone-200 bg-white focus:outline-none" style={{ height: '48px' }} />
+              </div>
             </div>
 
-           
-            <div style={{ position: 'absolute', top: '250px', left: '380px', width: '280px' }}>
-              <label className="block text-stone-700 text-sm font-semibold mb-2">Time <span className="text-red-500">*</span></label>
-              <input type="time" className="w-full px-4 py-3 rounded-md border border-stone-200 bg-white focus:outline-none" style={{ height: '48px' }} />
-            </div>
-
-           
-            <div style={{ position: 'absolute', top: '250px', left: '700px', width: '290px' }}>
-              <label className="block text-stone-700 text-sm font-semibold mb-2">Guests <span className="text-red-500">*</span></label>
-              <input type="number" min="1" className="w-full px-4 py-3 rounded-md border border-stone-200 bg-white focus:outline-none" style={{ height: '48px' }} />
-            </div>
-
-           
-            <p style={{ position: 'absolute',
-                 top: '335px', left: '60px', fontFamily: "'Poppins', sans-serif",
-                  fontSize: '12px',
-                   color: '#A1826A' }}>
+         
+            <p 
+              className="w-full lg:w-auto lg:absolute lg:top-[335px] lg:left-[60px]"
+              style={{ 
+                fontFamily: "'Poppins', sans-serif",
+                fontSize: '12px',
+                color: '#A1826A' 
+              }}
+            >
               We recommend booking at least 1 hour in advance
             </p>
 
-            
-            <div style={{ position: 'absolute', top: '380px', left: '60px', width: '930px' }}>
+            {/* Special Request */}
+            <div className="w-full lg:w-[930px] lg:absolute lg:top-[380px] lg:left-[60px]">
               <label className="block text-stone-700 text-sm font-semibold mb-2">Special Request</label>
               <textarea rows={4} className="w-full px-4 py-3 rounded-md border border-stone-200 bg-white focus:outline-none resize-none" style={{ height: '120px' }}></textarea>
             </div>
 
-           
-            <button 
-              type="submit"
-              className="flex items-center justify-center cursor-pointer hover:bg-[#c49463] transition-colors"
-              style={{
-                position: 'absolute',
-                width: '213px',
-                height: '59px',
-                top: '780px', 
-                left: '418px',   
-                borderRadius: '8px',
-                backgroundColor: '#D4A574E5',
-                color: '#FFFFFF',
-                fontWeight: 600,
-                fontFamily: "'Poppins', sans-serif",
-                border: 'none'
-                
-              }}
-            >
-              Reserve Now
-            </button>
+        
+            <div className="w-full flex justify-center lg:block">
+              <button 
+                type="submit"
+                className="flex items-center justify-center cursor-pointer hover:bg-[#c49463] transition-colors w-full sm:w-[213px] h-[59px] lg:absolute lg:top-[780px] lg:left-[418px]"
+                style={{
+                  borderRadius: '8px',
+                  backgroundColor: '#D4A574E5',
+                  color: '#FFFFFF',
+                  fontWeight: 600,
+                  fontFamily: "'Poppins', sans-serif",
+                  border: 'none'
+                }}
+              >
+                Reserve Now
+              </button>
+            </div>
 
-            
             <p 
+              className="w-full lg:absolute lg:top-[860px] lg:left-[0px] lg:w-[1049px] text-[16px] md:text-[20px]"
               style={{ 
-                position: 'absolute',
-                top: '860px',
-                left: '0px',
-                width: '1049px', 
                 fontFamily: "'Poppins', sans-serif",
                 fontWeight: 400,
-                fontSize: '20px',
-                lineHeight: '100%',
+                lineHeight: '130%',
                 textAlign: 'center',
                 color: '#8B4513CC'
               }}
@@ -157,10 +140,8 @@ export const BookTable = () => {
 
         
         <p 
+          className="w-full text-center lg:text-left mt-6 lg:mt-0 lg:absolute lg:bottom-[40px] lg:left-[196px]"
           style={{
-            position: 'absolute',
-            bottom: '40px',
-            left: '196px',
             fontFamily: "'Poppins', sans-serif",
             fontSize: '14px',
             color: '#8B451399'

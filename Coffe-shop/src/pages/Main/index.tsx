@@ -5,7 +5,7 @@ export const Main = () => {
   return (
     <div className="w-full min-h-screen text-black">
       
-      {/* Səhifədə hələlik yalnız Hero section aktivdir */}
+      
       <Hero />
 
     </div>
